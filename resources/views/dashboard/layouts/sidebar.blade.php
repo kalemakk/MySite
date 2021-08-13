@@ -36,9 +36,12 @@
         </a>
         <div id="expenses" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Expense:</h6>
+                <a class="collapse-item" href="cards.html">View Expenses</a>
+            </div>
+            <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Expense Types:</h6>
-                <a class="collapse-item" href="buttons.html">Buttons</a>
-                <a class="collapse-item" href="cards.html">Cards</a>
+                <a class="collapse-item" href="buttons.html">View Expense Types</a>
             </div>
         </div>
     </li>
@@ -52,9 +55,12 @@
         </a>
         <div id="income" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Income:</h6>
+                <a class="collapse-item" href="buttons.html">View Income</a>
+            </div>
+            <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Sources of Income:</h6>
-                <a class="collapse-item" href="buttons.html">Buttons</a>
-                <a class="collapse-item" href="cards.html">Cards</a>
+                <a class="collapse-item" href="buttons.html">View Income Sources</a>
             </div>
         </div>
     </li>
@@ -67,12 +73,32 @@
         </a>
         <div id="accounts" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Sources of Income:</h6>
+                <h6 class="collapse-header">Accounts:</h6>
+                <a class="collapse-item" href="buttons.html">View Accounts</a>
+            </div>
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Account Types:</h6>
+                <a class="collapse-item" href="buttons.html">View Account Types</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#assets"
+           aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Assets</span>
+        </a>
+        <div id="assets" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Fixed Assets:</h6>
                 <a class="collapse-item" href="buttons.html">Buttons</a>
                 <a class="collapse-item" href="cards.html">Cards</a>
             </div>
         </div>
     </li>
+
+
 
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"

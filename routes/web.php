@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ExpenseController;
+use App\Http\Controllers\IncomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +26,18 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::get('/dash',function (){
    return view('dashboard.index');
 })->name('dash');
+
+
+
+Route::get('all-income',[IncomeController::class,'getIncome'])->name('all-income');
+Route::get('income',[IncomeController::class,'getUserIncome'])->name('income');
+Route::post('income/save',[IncomeController::class,'saveIncome'])->name('save-income');
+Route::patch('income/{income}/update',[IncomeController::class,'updateIncome'])->name('update-income');
+Route::patch('income/{income}/delete',[IncomeController::class,'deleteIncome'])->name('delete-income');
+
+
+Route::get('all-expenses',[ExpenseController::class,'getIncome'])->name('all-income');
+Route::get('income',[IncomeController::class,'getUserIncome'])->name('income');
+Route::post('income/save',[IncomeController::class,'saveIncome'])->name('save-income');
+Route::patch('income/{income}/update',[IncomeController::class,'updateIncome'])->name('update-income');
+Route::patch('income/{income}/delete',[IncomeController::class,'deleteIncome'])->name('delete-income');

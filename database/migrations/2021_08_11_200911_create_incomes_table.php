@@ -18,6 +18,7 @@ class CreateIncomesTable extends Migration
             $table->foreignId('user_id')->references('id')->on('users')->constrained()->onDelete('cascade');
             $table->foreignId('inc_type_id')->references('id')->on('income_types')->constrained()->onDelete('cascade');
             $table->text('amount');
+            $table->foreignId('account_id')->references('id')->on('accounts')->constrained()->onUpdate('cascade');
             $table->timestamps();
         });
     }
